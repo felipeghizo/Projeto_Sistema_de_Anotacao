@@ -1,0 +1,122 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+div.w-50{
+    width: 50%;
+    float: left;
+}
+/* Body */
+body{background-color: rgb(24, 0, 24);}
+body div.w-50 form.container-note{
+    max-width: 500px;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px 2%;
+    background-color: white;
+    margin-top: 200px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+body div.w-50  form.container-note textarea{
+    border: none;
+    resize: none;
+    width: 100%;
+    outline: none;
+}
+body div.w-50  form.container-note textarea:nth-last-of-type(2){
+    font-size: 20px;
+}
+body div.w-50  form.container-note textarea:nth-last-of-type(1){
+    min-height: 100px;
+}
+body div.w-50  form.container-note input[type=submit]{
+    float: right;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(209, 209, 209);
+    color:rgb(24, 0, 24);
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px black;
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+}
+body div.w-50  form.container-note input[type=submit]:active{
+    background-color: rgb(165, 165, 165);
+    width: 48px;
+    height: 48px;
+}
+
+
+/* notas gerais*/
+body div.w-50 div.notas{
+    min-height: 600px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 2%;
+    background-color: rgb(131, 131, 131);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+body div.w-50 div.notas div.notas-tot{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+/* Caso não haja notas */
+body div.w-50 div.notas div.notas-tot div.void{
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+body div.w-50 div.notas div.notas-tot div.void h3,body div.w-50 div.notas div.notas-tot div.void i{font-size: 40px;}
+/* notas individuais */
+body div.w-50 div.notas div.notas-tot form.nota-single{
+    width: 250px;
+    height: 200px;
+    margin: 10px 1%;
+    background-color: rgb(175, 192, 100);
+    padding: 5px 10px;
+    box-shadow: 1px 1px 2px rgb(169, 185, 74);
+}
+form.nota-single h2{
+    height: 40px;
+}
+form.nota-single p.nota-main{
+    height: 120px;
+    overflow-y: auto;
+}
+form.nota-single p.data{
+    float: left;
+    vertical-align: bottom;
+    position: relative;
+    top: 10px;
+}
+form.nota-single input.delete{
+    color: rgba(175, 192, 100, 0);
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: none;
+    z-index: 3;
+}
+form.nota-single i{
+    position: relative;
+    z-index: 1;
+    left: 64px;
+    top: 7px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1150px){
+    div.w-50{
+        width: 100%;
+    }
+    body div.w-50 form.container-note{
+        margin: 10px auto;
+    }
+}
